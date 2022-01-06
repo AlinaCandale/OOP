@@ -11,7 +11,6 @@ namespace RabbitClass
             rabbit.Sleeps();
             rabbit.Eats();
             Console.WriteLine(rabbit.Age);
-
         }
     }
 }
