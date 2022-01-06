@@ -16,7 +16,7 @@ namespace OOP
             Horse horse = new Horse();
             horse.Talk();
             horse.Run();
-
+            
             Mammal horseAsMammal = horse;
             //vad doar metodele din mammal
             horseAsMammal.Eat();

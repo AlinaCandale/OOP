@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP.Flyables
 {
-    class ParadiseBird
+    class ParadiseBird// : Bird - nu merge
     {
     }
 }

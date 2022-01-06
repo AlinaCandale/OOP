@@ -73,16 +73,6 @@ namespace AnimalsEx
             {
                 item.Print();
                 Console.WriteLine();
-                //if (item.Name == "" || item.Age < 0)
-                //{
-                //    Console.WriteLine("Invalid input!");
-                //}
-                //else
-                //{
-                //    Console.WriteLine(item.GetType().Name);
-                //    Console.WriteLine($"{item.Name} {item.Age} {item.Gender}");
-                //    item.ProduceSound();
-                //}
             }
         }
     }

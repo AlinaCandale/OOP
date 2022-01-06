@@ -12,5 +12,10 @@ namespace OOP.Flyables
         {
             Console.WriteLine("Toy - Fly()");
         }
+
+        public void Play()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

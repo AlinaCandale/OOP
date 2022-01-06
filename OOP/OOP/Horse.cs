@@ -16,6 +16,7 @@ namespace OOP
         //redefine something in the parent class
         public new void Talk()
         {
+            SaySomething(); // la fel ca si base.SaySomething();
             Console.WriteLine("I am a horse and I 'Talk'");
         }
 

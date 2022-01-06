@@ -30,5 +30,9 @@ namespace OOP
             Console.WriteLine("I am a mammal and I Sleep");
         }
 
+        protected void SaySomething()
+        {
+            Console.WriteLine("Say Something");
+        }
     }
 }
