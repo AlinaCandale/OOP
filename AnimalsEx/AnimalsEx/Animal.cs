@@ -25,6 +25,7 @@ namespace AnimalsEx
 
         public virtual void ProduceSound()
         {
+            Console.WriteLine("some sound");
         }
 
         public void Print()

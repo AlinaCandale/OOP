@@ -7,30 +7,38 @@ namespace Acronym
     {
         static void Main(string[] args)
         {
-            AcronymConvertor text = new AcronymConvertor("Three Letter Acronyms");
-            text.Print();
+            AcronymConvertor text = new AcronymConvertor();
+            text.ConvertToAcronym("Three Letter Acronyms");
 
-            AcronymConvertor anothertext = new AcronymConvertor("Portable Network Graphics");
-            anothertext.Print();
+            AcronymConvertor text2 = new AcronymConvertor();
+            text2.ConvertToAcronym("Three  Letter ,   Acronyms");
+
+            AcronymConvertor anothertext = new AcronymConvertor();
+            anothertext.ConvertToAcronym("Portable Network Graphics");
         }
     }
 
     class AcronymConvertor
     {
         StringBuilder result = new StringBuilder();
-        public AcronymConvertor(string textToConvert)
+        public void ConvertToAcronym(string textToConvert)
         {
             result.Append(textToConvert[0]);
             for (int i = 1; i < textToConvert.Length - 1; i++)
             {
-                if (textToConvert[i] == ' ')
+                if (textToConvert[i] == ' ' && Char.IsLetter(textToConvert[i + 1]))
                 {
                     result.Append(textToConvert[i + 1]);
                 }
+                else
+                {
+                    continue;
+                }
             }
+            Print();
         }
 
-        public void Print()
+        void Print()
         {
             Console.WriteLine(result.ToString().ToUpper());
         }
